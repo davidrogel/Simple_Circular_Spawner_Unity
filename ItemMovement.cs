@@ -17,7 +17,7 @@ public class ItemMovement : MonoBehaviour
 
     private SpawnManager manager;
 
-	void Start ()
+    void Start ()
     {
         used = false;
 
@@ -34,12 +34,12 @@ public class ItemMovement : MonoBehaviour
         myColor = GetComponent<SpriteRenderer>().color;
 
         manager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SpawnManager>();
-	}
+    }
 	
-	void Update ()
+    void Update ()
     {
         myTransform.Translate(dir * speed * Time.deltaTime);
-	}
+    }
 
     void OnMouseDown()
     {
