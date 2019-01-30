@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
     {
         CreateStartPositions();
         StartCoroutine(Spawn());
-	}
+    }
 
     void CreateStartPositions()
     {
